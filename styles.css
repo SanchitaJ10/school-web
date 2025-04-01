@@ -1,0 +1,513 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Background Animation */
+.animation-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #1c5a85, #feb47b17);
+
+
+    background-size: 400% 400%;
+    animation: animateBackground 10s infinite alternate;
+    z-index: -1;
+}
+
+@keyframes animateBackground {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+/*home*/
+/* Home Section */
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/3/39/Hibbing_High_School_2014.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* Overlay Effect */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark transparent overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Content Box */
+.home-content {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.home-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.home-content p {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background: #ffcc00;
+    color: #333;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    
+}
+
+.btn:hover {
+    background: #e6b800;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .home-content p {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+       padding: 10px 20px;
+    }
+}
+
+
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 30px;
+    gap: 20px;
+}
+
+.about-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-content h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background: #2980b9;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #1c5a85;
+}
+
+.about-images {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+}
+
+.about-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.about-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-images {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .about-images img {
+        width: 100%;
+    }
+}
+
+   
+   
+
+
+
+
+
+/* Sections */
+section {
+    padding: 100px 20px;
+}
+#home img {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-grid img {
+    width: 45%;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+/* YouTube Section */
+#youtube-section {
+    padding: 50px 20px;
+    background: linear-gradient(270deg, #1c5a85, #feb47b17);
+
+    color: white;
+}
+
+#youtube-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Video Container */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 80%;
+    margin: auto;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .video-container{
+        max-width: 95%;
+    }
+}
+
+/*reviews*/
+/* Reviews Section */
+#reviews {
+    padding: 50px 20px;
+    background: linear-gradient(270deg, #1c5a85, #feb47b17);
+
+    color: white;
+}
+
+#reviews h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Reviews Container */
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Review Card */
+.review-card {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+}
+
+/* User Image */
+.review-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #ff9a9e;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .reviews-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/*addmissions*/
+/* Admission Section */
+#admission {
+    background: linear-gradient(270deg, #1c5a85, #feb47b17);
+
+    padding: 50px 20px;
+    color: white;
+    border-radius: 10px;
+    width: 80%;
+    margin: 50px auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#admission h2 {
+    font-size: 32px;
+}
+
+#admission p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Form */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button */
+button {
+    background: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+}
+
+/*contact*/
+.contact-section {
+    background: #005c99;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.contact-container h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.info-box {
+    text-align: center;
+}
+.info-box i {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #ffcc00;
+    border: none;
+    padding: 12px;
+    color: #333;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #e6b800;
+}
+
+/* Social Media Links */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffcc00;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .contact-info {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
